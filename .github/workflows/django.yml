@@ -9,6 +9,13 @@ on:
 permissions:
   contents: read
 
+env:
+  PGDATABASE: ${{ secrets.PGDATABASE }}
+  PGHOST: ${{ secrets.PGHOST }}
+  PGPASSWORD: ${{ secrets.PGPASSWORD }}
+  PGPORT: ${{ secrets.PGPORT }}
+  PGUSER: ${{ secrets.PGUSER }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
