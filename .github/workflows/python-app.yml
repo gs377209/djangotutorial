@@ -18,6 +18,7 @@ env:
   PGPASSWORD: ${{ secrets.PGPASSWORD }}
   PGPORT: ${{ secrets.PGPORT }}
   PGUSER: ${{ secrets.PGUSER }}
+  SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
 jobs:
   build:
