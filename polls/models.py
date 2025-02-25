@@ -1,3 +1,10 @@
+"""_summary_
+
+Returns:
+    _type_: _description_
+"""
+
+
 import datetime
 
 from django.db import models
@@ -6,6 +13,14 @@ from django.contrib import admin
 
 
 class Question(models.Model):
+    """_summary_
+
+    Args:
+        models (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField("date published")
 
@@ -18,11 +33,24 @@ class Question(models.Model):
         description="Published recently?",
     )
     def was_published_recently(self):
+        """_summary_
+
+        Returns:
+            _type_: _description_
+        """
         now = timezone.now()
         return now - datetime.timedelta(days=1) <= self.pub_date <= now
 
 
 class Choice(models.Model):
+    """_summary_
+
+    Args:
+        models (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)

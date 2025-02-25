@@ -9,6 +9,11 @@ django-debug-toolbar = "*"
 psycopg2 = "*"
 
 [dev-packages]
+flake8 = "*"
+pylint = "*"
+pytest = "*"
+autopep8 = "*"
+pylint-django = "*"
 
 [requires]
 python_version = "3.13"

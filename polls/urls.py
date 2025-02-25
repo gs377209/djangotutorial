@@ -1,3 +1,7 @@
+"""_summary_
+"""
+
+
 from django.urls import path
 
 from . import views
