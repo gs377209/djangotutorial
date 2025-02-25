@@ -28,5 +28,4 @@ jobs:
         run: pipenv sync
       - name: Run Tests
         run: |
-          pipenv shell
           python3 manage.py test
