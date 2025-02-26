@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "e2f2fef9d43b6f67eae5656de049023ea1685fa47ceae1772b6b52e2d1705fa0"
+            "sha256": "fee28f7ba812bad9daebe23e57c301adbd636fc63928ad74107453b72eaace6b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -41,6 +41,15 @@
             "index": "pypi",
             "markers": "python_version >= '3.9'",
             "version": "==5.0.1"
+        },
+        "django-polls-gs377209": {
+            "hashes": [
+                "sha256:5361783140466492725482ccf1c546694f0ded15c4f362a2c856f745c70669e3",
+                "sha256:ea8c236a2b91d9161304352000a2290c0e7f87159e14e281d2ff23db9bfb05a5"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.10'",
+            "version": "==0.0.3"
         },
         "gunicorn": {
             "hashes": [

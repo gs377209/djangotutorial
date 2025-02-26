@@ -10,6 +10,7 @@ psycopg2 = "*"
 gunicorn = "*"
 whitenoise = "*"
 psycopg = "*"
+django-polls-gs377209 = "*"
 
 [dev-packages]
 flake8 = "*"
@@ -22,3 +23,14 @@ twine = "*"
 
 [requires]
 python_version = "3.13"
+
+[scripts]
+flake8 = "flake8 ."
+flake8-errors = "flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics"
+flake8-warnings = "flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics"
+pylint = "pylint ."
+autopep8-check = "autopep8 . -r -d"
+autopep8-write = "autopep8 . -r -i"
+pytest = "pytest"
+build = "python3 -m build"
+manage = "python3 manage.py"

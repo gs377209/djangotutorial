@@ -20,8 +20,8 @@ from django.urls import path, include
 from debug_toolbar.toolbar import debug_toolbar_urls
 
 urlpatterns = [
-    path("polls/", include("polls.urls")),
-    # path("polls/", include("django_polls.urls")),
+    # path("polls/", include("polls.urls")),
+    path("polls/", include("django_polls_gs377209.urls")),
     path('admin/', admin.site.urls),
 ]
 
