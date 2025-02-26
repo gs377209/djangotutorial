@@ -7,7 +7,7 @@ packages = ["mysite", "polls"]
 
 [project]
 name = "django-tutorial-gs377209"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
     "django>=5.1",
 ]
