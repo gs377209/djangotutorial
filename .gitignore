@@ -3,3 +3,5 @@ __pycache__/
 .env
 *.pem
 staticfiles/
+django_tutorial_gs377209.egg-info/
+dist/

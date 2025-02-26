@@ -17,6 +17,8 @@ pylint = "*"
 pytest = "*"
 autopep8 = "*"
 pylint-django = "*"
+build = "*"
+twine = "*"
 
 [requires]
 python_version = "3.13"
